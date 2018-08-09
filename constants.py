@@ -1,0 +1,25 @@
+# Display constants
+from color import *
+
+GAMETITLE = 'Space Invaders!'
+DISPWIDTH = 650
+DISPHEIGHT = 640
+BGCOLOR = NEARBLACK
+XMARGIN = 50
+YMARGIN = 50
+
+# Time for the spaceship
+SSWIDTH = 80
+SSHEIGHT = 20
+SSCOLOR = COMBLUE
+SSSPEED = 5
+
+#Bring on the Dark Side
+ENEMYWIDTH = 65
+ENEMYHEIGHT = 65
+ENEMYGAP = 0
+TIMEOFFSET = 300
+#Wield Ligtsabers
+BULLETWIDTH = 5
+BULLETHEIGHT = 80
+BULLETOFFSET = 700
