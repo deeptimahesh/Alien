@@ -16,7 +16,7 @@ class Alien(pygame.sprite.Sprite):
 		#self.image = self.setanimage('alien3.png')
 		#self.rect = self.image.get_rect(topleft=((20 + self.column*80, 650 - (self.row*80))))
 		self.vectorx = 1
-		self.healthtime = 10000
+		self.healthtime = 7000
 		self.timeOffset = row * TIMEOFFSET
 		self.timer = pygame.time.get_ticks() - self.timeOffset
 		self.score = 0

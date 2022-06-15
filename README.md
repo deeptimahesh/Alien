@@ -12,3 +12,5 @@ python3 -m pip install -U pygame --user
 python alien.py
 ```
 ![alt text](game-preview.png)
+![alt text](aliens.png)
+

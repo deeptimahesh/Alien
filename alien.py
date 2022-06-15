@@ -11,8 +11,6 @@ from enemies import *
 import bullet
 from bullet import *
 
-
-
 redbull = []
 pygame.font.init()
 f1 = pygame.font.SysFont('monospace', 30)
@@ -41,7 +39,7 @@ class App(object):
 		enemies = pygame.sprite.Group()
 		enemy = Alien(random.randint(7,8),random.randint(0,7))#random.randint(7,8),random.randint(1,8))
 		#self.displaySurf.blit(enemy.image,enemy.rect)
-		enemy.setanimage('alien3.png')
+		enemy.setanimage('assets/alien3.png')
 		enemies.add(enemy)
 		#array.append(enemy)
 		return enemies
@@ -50,9 +48,8 @@ class App(object):
 		#pygame.sprite.groupcollide(self.redBullets, self.enemies, True, False)
 		for alien in pygame.sprite.groupcollide(self.redBullets, self.enemies, True, False).values():
 			for i in redbull:
-
 				if pygame.sprite.spritecollideany(i,self.enemies,collided=None) != None:
-					pygame.sprite.spritecollideany(i,self.enemies,collided=None).setanimage('alien2.png')
+					pygame.sprite.spritecollideany(i,self.enemies,collided=None).setanimage('assets/alien2.png')
 					pygame.sprite.spritecollideany(i,self.enemies,collided=None).healthtime += 5000
 
 
